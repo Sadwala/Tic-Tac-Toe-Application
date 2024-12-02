@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+      <h1>Tic-Tac-Toe</h1>
+
+      <!-- Game Mode Selection -->
+      <div class="game-mode">
+        <button id="player-vs-player" class="mode-button">
+          Player vs Player
+        </button>
+        <button id="player-vs-computer" class="mode-button">
+          Player vs Computer
+        </button>
+      </div>
+
+      <!-- Toggle Button for Background Music -->
+      <button
+        id="toggle-music"
+        class="music-toggle"
+        title="Toggle Background Music"
+      >
+        🔊
+      </button>
+
+      <!-- Game Status -->
+      <p id="game-status">Select a game mode to start!</p>
+
+      <!-- Game Area -->
+      <div class="game-area">
+        <div class="game-board">
+          <div class="cell" data-cell="0"></div>
+          <div class="cell" data-cell="1"></div>
+          <div class="cell" data-cell="2"></div>
+          <div class="cell" data-cell="3"></div>
+          <div class="cell" data-cell="4"></div>
+          <div class="cell" data-cell="5"></div>
+          <div class="cell" data-cell="6"></div>
+          <div class="cell" data-cell="7"></div>
+          <div class="cell" data-cell="8"></div>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+          <div class="player-score">
+            <h2>Player X</h2>
+            <p id="score-x">0</p>
+          </div>
+          <div class="player-score">
+            <h2>Player O</h2>
+            <p id="score-o">0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reset Button -->
+      <button id="reset" class="reset-button">🔄 Restart Game</button>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2 id="popup-message"></h2>
+        <button id="close-popup" class="close-button">Okay</button>
+      </div>
+    </div>
+
+    <!-- Audio Files -->
+    <audio id="background-music" src="background-music.mp3" loop></audio>
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="draw-sound" src="draw.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
